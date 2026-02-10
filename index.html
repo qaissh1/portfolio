@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qais | IT Portfolio</title>
+
+  <style>
+    body { background:#0b0b0b; color:#e8e8e8; font-family: Arial, sans-serif; margin:0; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px; }
+
+    .card {
+      background:#141414;
+      border:1px solid #222;
+      border-radius:14px;
+      padding:20px;
+      margin:16px 0;
+    }
+
+    .top { display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .logo { display:flex; align-items:center; gap:14px; }
+    .tag { color:#9ad6b5; margin:6px 0 0; font-size:14px; }
+
+    h1 { margin:0; font-size:22px; letter-spacing:0.5px; }
+    h2 { margin:0 0 10px; color:#00ff88; }
+    p { line-height:1.6; margin:10px 0; color:#e8e8e8; }
+    .muted { color:#bdbdbd; }
+
+    .pill {
+      display:inline-block; padding:8px 12px; border:1px solid #2a2a2a;
+      border-radius:999px; margin:6px 6px 0 0; background:#101010;
+      font-size:14px;
+    }
+
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+
+    .photoBox { background:#101010; border:1px solid #262626; border-radius:12px; padding:12px; }
+    img { width:100%; border-radius:12px; border:1px solid #2a2a2a; display:block; }
+
+    .btn {
+      display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #00ff88;
+      color:#00ff88; text-decoration:none; margin-top:8px;
+    }
+    .btn:hover { background:#00ff881a; }
+
+    .hr { height:1px; background:#222; border:0; margin:14px 0; }
+
+    ul { margin:10px 0 0; padding-left:18px; color:#e3e3e3; line-height:1.9; }
+
+    @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- HEADER / LOGO -->
+    <div class="card">
+      <div class="top">
+        <div class="logo">
+          <svg width="220" height="84" viewBox="0 0 220 84" aria-label="Qais logo">
+            <rect width="220" height="84" rx="14" fill="#141414" stroke="#2a2a2a"/>
+            <text x="50%" y="60%"
+                  font-size="44"
+                  fill="#00ff88"
+                  text-anchor="middle"
+                  font-family="Arial"
+                  font-weight="bold"
+                  style="letter-spacing:6px;">QAIS</text>
+          </svg>
+
+          <div>
+            <h1>Qais | IT Portfolio</h1>
+            <div class="tag">Fachinformatiker Systemintegration – Lernprojekt</div>
+          </div>
+        </div>
+
+        <div class="pill">Linux • Apache • HTML/CSS • Networking</div>
+      </div>
+
+      <hr class="hr">
+
+      <p class="muted">
+        Simple home lab project: a static website hosted on my own Linux machine using Apache.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="card">
+      <h2>About</h2>
+      <p>
+        Hi, I’m Qais. I’m preparing for an Ausbildung in <b>IT System Integration</b>.
+        I’m currently learning Linux basics, networking fundamentals, and how to run services like Apache.
+      </p>
+      <p class="muted">
+        This site is part of my practice: edit files on Linux, deploy to <b>/var/www/html</b>, and access it from other devices in the network.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card">
+      <h2>Skills (so far)</h2>
+      <span class="pill">Linux Mint</span>
+      <span class="pill">Terminal / Shell</span>
+      <span class="pill">Apache2</span>
+      <span class="pill">HTML basics</span>
+      <span class="pill">CSS basics</span>
+      <span class="pill">Local Network (IP access)</span>
+      <span class="pill">Troubleshooting</span>
+
+      <hr class="hr">
+
+      <p class="muted">
+        I focus on building a strong base: Linux + network + practical tasks (not just theory).
+      </p>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="card">
+      <h2>Project</h2>
+      <p>
+        <b>Home Linux Web Server</b> — Installed Linux Mint, configured Apache, deployed a static HTML website,
+        and served it inside my home network via IP.
+      </p>
+
+      <ul>
+        <li>Installed Apache2 and checked service status with <b>systemctl</b></li>
+        <li>Edited website files with <b>nano</b></li>
+        <li>Used <b>/var/www/html</b> as document root</li>
+        <li>Tested from phone/browser using local IP address</li>
+        <li>Fixed issues like wrong filenames, wrong paths, and missing files</li>
+      </ul>
+
+      <hr class="hr">
+
+      <p class="muted">
+        Next steps: GitHub upload, cleaner folder structure, and a safe public demo later.
+      </p>
+    </div>
+
+    <!-- PHOTOS -->
+    <div class="card">
+      <h2>Photos</h2>
+      <p class="muted">
+        These are project screenshots.
+      </p>
+
+      <div class="grid">
+        <div class="photoBox">
+          <img src="linux.png" alt="Project photo 1">
+          <p class="muted" style="margin:10px 0 0;">linux.png</p>
+        </div>
+        <div class="photoBox">
+          <img src="web1.png" alt="Project photo 2">
+          <p class="muted" style="margin:10px 0 0;">web1.png</p>
+        </div>
+      </div>
+
+      <hr class="hr">
+
+      <p class="muted">
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="card">
+      <h2>Links</h2>
+      <p class="muted">GitHub link will be added after upload.</p>
+      <a class="btn" href="#">GitHub (soon)</a>
+    </div>
+
+    <div class="muted" style="text-align:center; padding:10px 0 30px; font-size:13px;">
+      Qais • 2026
+    </div>
+
+  </div>
+</body>
+</html>
